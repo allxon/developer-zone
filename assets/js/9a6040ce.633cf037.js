@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkocto_develop_zone=self.webpackChunkocto_develop_zone||[]).push([[5139],{1019:e=>{e.exports=JSON.parse('{"label":"hello","permalink":"/developer-zone/blog/tags/hello","allTagsPath":"/developer-zone/blog/tags","count":2}')}}]);
