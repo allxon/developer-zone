@@ -148,7 +148,7 @@ const config: Config = {
                     <a target="_blank" href="https://www.allxon.com/privacy-policy?hsLang=en">Privacy Policy</a>
                     <a target="_blank" href="https://www.allxon.com/terms-of-use-developer">Terms</a>
                   </div>
-                  <p class="copyright">© 2024 Allxon. All rights reserved.</p>
+                  <p class="copyright">© ${(new Date()).getFullYear()} Allxon. All rights reserved.</p>
               </div>
                `,
             },
