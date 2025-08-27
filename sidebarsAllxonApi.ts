@@ -38,6 +38,25 @@ const sidebars: SidebarsConfig = {
       id: "Ratelimits",
       label: "Ratelimits",
     },
+    {
+      type: 'category',
+      label: 'Feature Flow',
+      collapsed: false,
+      items: [
+        {
+          type: 'category',
+          label: 'OTA',
+          items: [{
+            type: 'doc',
+            id: 'FeatureFlow/UploadArtifact',
+            label: 'Upload Artifact'
+          }, {
+            type: 'doc',
+            id: 'FeatureFlow/DeployArtifact',
+            label: 'Deploy Artifact'
+          }]
+        },]
+    }
   ],
 };
 
