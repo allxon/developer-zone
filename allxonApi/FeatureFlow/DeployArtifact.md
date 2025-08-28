@@ -48,8 +48,8 @@ If your execution script (`ota_deploy.sh`) requires runtime arguments, you can i
 # --- Start of configuration ---
 keyid="Your ApiKeyID"
 secret="Your ApiSecret"
-device_sn="a41c03c45e1c11ec9389bba7faa790bc"
-artifact_uuid="a5ae26cf-3b80-4f7a-8bd1-6dfb1d3a125a"
+device_sn="Your device serial number"
+artifact_uuid="Your artifact UUID"
 # --- End of configuration ---
 
 # get current epoch in milliseconds

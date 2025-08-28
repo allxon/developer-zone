@@ -37,7 +37,7 @@ The request body should be a JSON object containing the artifact file name and t
 # --- Start of configuration ---
 keyid="Your ApiKeyID"
 secret="Your ApiSecret"
-file_name="a19ae4e0ced9bddd59832e926004b4d2-Allxon_OTA_Artifact-L-all.tar.gz" # The name of your artifact file
+file_name="Your artifact file name" # The name of your artifact file
 # --- End of configuration ---
 
 # get current epoch in milliseconds
@@ -113,7 +113,7 @@ The request body should be a JSON object containing the artifact file md5 checks
 # --- Start of configuration ---
 keyid="Your ApiKeyID"
 secret="Your ApiSecret"
-file_name="my-artifact.zip" # The name of your artifact file
+file_name="Your artifact file name" # The name of your artifact file
 artifact_uuid="The artifact_uuid from Step 1"
 # --- End of configuration ---
 
@@ -182,7 +182,7 @@ With the `upload_url`, you can now upload your artifact file. This is a `PUT` re
 # --- Start of configuration ---
 upload_url="The upload_url from Step 2"
 content_md5="The content_md5 from Step 2"
-file_name="a19ae4e0ced9bddd59832e926004b4d2-Allxon_OTA_Artifact-L-all.tar.gz"
+file_name="Your artifact file name" # The name of your artifact file
 # --- End of configuration ---
 
 echo "Uploading artifact file..."
