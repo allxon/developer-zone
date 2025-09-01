@@ -4,6 +4,7 @@ This tutorial guides you through the process of triggering and monitoring an OTA
 ## Before You Start
 - Make sure you have an artifact already uploaded. You can learn how to upload an artifact in the [previous section](/allxon-api/FeatureFlow/UploadArtifact).
 - You need to have an API Key (`ApiKeyID` and `ApiSecret`). If you don't have one, please follow the [Getting Started](/allxon-api/GettingStarted) to create your API key.
+- For more details on API authorization, please refer to the [Authorization](/allxon-api/APIAuthorization) section.
 
 ## Step 1: Trigger the Deployment
 To trigger a deployment, you will make a `POST` request to the `/ota/deployment` endpoint. You must provide the serial numbers of the devices you want to update and the UUID of the artifact you previously uploaded.
