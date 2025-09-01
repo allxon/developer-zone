@@ -10,6 +10,7 @@ The process involves three main steps:
 ## Before You Start
 - Make sure you have an artifact file ready for upload (e.g., `a19ae4e0ced9bddd59832e926004b4d2-Allxon_OTA_Artifact-L-all.tar.gz`). [Click here](https://github.com/allxon/allxon-hello-ota-example) to know how to prepare an artifact.
 - You need to have an API Key (`ApiKeyID` and `ApiSecret`). If you don't have one, please follow the [Getting Started](/allxon-api/GettingStarted) to create your API key.
+- For more details on API authorization, please refer to the [Authorization](/allxon-api/APIAuthorization) section.
 
 ## Step 1: Create an Artifact Record
 
