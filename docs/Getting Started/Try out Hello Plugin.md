@@ -129,20 +129,20 @@ Alternatively, you can install the plugin on your device through **Plugin Instal
 <TabItem value="bash" label="Linux">
 
 ```bash
-sudo bash -c "$(wget -qO - https://get.allxon.net/plugIN/linux)" -s --app-guid [APP_GUID] --from-path [PLUGIN_PACKAGE]
+sudo allxon-cli plugin --app-guid <APP_GUID> install --package <PLUGIN_PACKAGE>
 
 # For Example
-sudo bash -c "$(wget -qO - https://get.allxon.net/plugIN/linux)" -s --app-guid a8e873a1-e5df-43a2-928a-745ff9c94dfb --from-path plugin-hello-X.X.X-linux-x86_64.tar.gz
+sudo allxon-cli plugin --app-guid a8e873a1-e5df-43a2-928a-745ff9c94dfb install --package plugin-hello-X.X.X-linux-x86_64.tar.gz
 ```
 
 </TabItem>
 <TabItem value="cmd" label="Windows">
 
 ```batch
-powershell -command "Invoke-WebRequest -OutFile %temp%\plugin-installer.bat https://get.allxon.net/plugIN/windows" && %temp%\plugin-installer.bat --app-guid [APP_GUID] --from-path [PLUGIN_PACKAGE]
+allxon-cli plugin --app-guid <APP_GUID> install --package <PLUGIN_PACKAGE>
 
 # For Example
-powershell -command "Invoke-WebRequest -OutFile %temp%\plugin-installer.bat https://get.allxon.net/plugIN/windows" && %temp%\plugin-installer.bat --app-guid 15dee3c8-adb9-4f7f-83d9-8000eff23f1f --from-path plugin-hello-X.X.X-win-x86_64.zip
+allxon-cli plugin --app-guid 15dee3c8-adb9-4f7f-83d9-8000eff23f1f install --package plugin-hello-X.X.X-win-x86_64.zip
 ```
 
 </TabItem>
