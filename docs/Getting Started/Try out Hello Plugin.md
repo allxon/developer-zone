@@ -20,7 +20,7 @@ Following the steps below to get your device online on Allxon Portal:
 
 ### Download Plugin Package
 
-Download [Hello Plugin](https://github.com/allxon/plugIN-hello/releases) archive file and extract it. We call this archive a "**plugin package**".
+Download the [Hello Plugin](https://github.com/allxon/plugIN-hello/releases) archive for your platform. We call this archive the "**plugin package**"; use the tab below that matches your operating system to continue.
 
 import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
@@ -35,15 +35,14 @@ tar -xf plugin-hello-X.X.X-linux-x86_64.tar.gz -C extracted_folder
 </TabItem>
 <TabItem value="cmd" label="Windows">
 
-1. Right click `plugin-hello-X.X.X-win-x86_64.zip` file
-2. Click "Extract All..." to `extracted_folder`
+Hello Plugin on Windows is available with help from our team. For the package, extraction steps, and environment notes, please [contact us](https://www.allxon.com/contact).
 
 </TabItem>
 </Tabs>
 
 :::caution Notice
 
-Check your platform and CPU architecture. For Linux, we only tested on Ubuntu (> 18.04) and NVIDIA Jetson (> L4T R32.6.1 )
+Check your platform and CPU architecture. For Linux, we only tested on Ubuntu (> 18.04) and NVIDIA Jetson (> L4T R32.6.1 ). For Windows, please [contact us](https://www.allxon.com/contact) so we can assist with supported setups.
 
 :::
 
@@ -71,23 +70,7 @@ The **App GUID** represents this plugin's ID, `uninstall_plugIN.sh` and `install
 </TabItem>
 <TabItem value="cmd" label="Windows">
 
-```
-.
-├── [APP_GUID]
-│   ├── libcrypto-1_1-x64.dll
-│   ├── libssl-1_1-x64.dll
-│   ├── plugin_alert.json
-│   ├── plugin_command_ack.json
-│   ├── plugin-hello.exe
-│   ├── plugin_state.json
-│   ├── plugin_update_template.json
-│   └── uninstall_plugIN.bat
-└── install_plugIN.bat
-
-1 directory, 9 files
-```
-
-The **App GUID** represents this plugin's ID, `uninstall_plugIN.bat` and `install_plugIN.bat` are used to install and uninstall your plugin.
+The extracted layout on Windows matches the same plugin concepts (App GUID folder, JSON templates, installer scripts, and the plugin binary). For the exact file list in your build and how it maps to install/uninstall, please [contact us](https://www.allxon.com/contact).
 
 </TabItem>
 </Tabs>
@@ -113,10 +96,7 @@ cd extracted_folder/[APP_GUID]
 </TabItem>
 <TabItem value="cmd" label="Windows">
 
-```batch
-cd extracted_folder\[APP_GUID]
-plugin-hello.exe %cd%
-```
+To run Hello Plugin on Windows, we will walk you through the working directory, arguments, and any prerequisites. Please [contact us](https://www.allxon.com/contact).
 
 </TabItem>
 </Tabs>
@@ -138,12 +118,7 @@ sudo allxon-cli plugin --app-guid a8e873a1-e5df-43a2-928a-745ff9c94dfb install -
 </TabItem>
 <TabItem value="cmd" label="Windows">
 
-```batch
-allxon-cli plugin --app-guid <APP_GUID> install --package <PLUGIN_PACKAGE>
-
-# For Example
-allxon-cli plugin --app-guid 15dee3c8-adb9-4f7f-83d9-8000eff23f1f install --package plugin-hello-X.X.X-win-x86_64.zip
-```
+`allxon-cli` install options and the App GUID for your Windows package are provided when you work with Allxon. Please [contact us](https://www.allxon.com/contact) for the exact command line for your environment.
 
 </TabItem>
 </Tabs>
